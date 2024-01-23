@@ -1,0 +1,270 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+} */
+
+
+body {
+    background-color: #bbd0ae;
+    /* vertical-align: middle; */
+
+}
+
+
+
+.fRowContainer {
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid rgb(29, 0, 50);
+    border-radius: 10px;
+}
+
+img {
+    height: 13rem;
+    width: 13rem;
+}
+
+.FHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#rock {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    /* margin: 0 5rem 0 0; */
+    background: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+#rock:hover {
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2.8rem;
+    margin-bottom: 20px;
+    background-color: rgb(209, 209, 209);
+}
+
+
+#paper {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    /* margin: 0 5rem 0 0; */
+    background: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+#paper:hover {
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2.8rem;
+    margin-bottom: 20px;
+    background-color: rgb(209, 209, 209);
+}
+
+
+#scissors {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    margin: 0 0 0 0;
+    background: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+#scissors:hover {
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2.8rem;
+    margin-bottom: 20px;
+    background-color: rgb(209, 209, 209);
+}
+
+.sRowContainer {
+    height: 25rem;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sColContainer1 {
+    height: 18rem;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.sColContainer2 {
+    height: 18rem;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.sColContainer3 {
+    height: 18rem;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yChoice {
+    margin: -20px 0px;
+}
+
+.SImageS {
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2.8rem;
+    margin-bottom: 20px;
+    background-color: rgb(209, 209, 209);
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    /* margin: 0 5rem 0 0; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.SImageS2 {
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2.8rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 0 50px;
+    background-color: rgb(209, 209, 209);
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    /* margin: 0 5rem 0 0; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.SImageS3 {
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2.8rem;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    padding: 0 50px;
+    background-color: rgb(209, 209, 209);
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    /* margin: 0 5rem 0 0; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.TextCon {
+    display: flex;
+    justify-content: right;
+    margin: -10px 10px 10px 0;
+}
+
+.resetBtn {
+    height: 2rem;
+    width: 5rem;
+    background-color: white;
+    color: #000000;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#count1,
+#count2 {
+    font-size: 4rem;
+    color: rgb(234, 0, 255);
+}
+
+.VS,
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.resetBtn {
+    margin-right: -8px;
+}
+
+
+@media screen and (max-width:920px) {
+    img {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .fRowContainer {
+        height: 54rem;
+        width: 18rem;
+        display: grid;
+        grid-template-rows: minmax(18rem, auto);
+        border: 5px solid rgb(29, 0, 50);
+        border-radius: 10px;
+        justify-content: center;
+        align-content: center;
+        margin: 0px auto;
+    }
+
+    .sRowContainer {
+        height: 36rem;
+        width: 19rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        display: grid;
+        grid-template-rows: minmax(9rem, auto);
+        justify-content: center;
+        margin: 0px auto;
+    }
+
+    .VS{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .resetBtn {
+        margin-right: -8px;
+    }
+
+    .sColContainer3 {
+        height: 18rem;
+        width: 10rem;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        margin: 0px auto;
+        padding-bottom: 0px;
+    }
+}
