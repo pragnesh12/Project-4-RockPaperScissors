@@ -177,7 +177,13 @@ function playGame(userChoice, selectImg) {
             }
             break;
     };
-
+    if(userWinningCounting == 3 || computerWinningCounting == 3){
+        if(userWinningCounting > computerWinningCounting){
+            alert("You're Winner");
+        }else{
+            alert("Computer is Winner");
+        }
+    }
 }
 
 

@@ -187,11 +187,11 @@ img {
     transition: 0.4s;
 }
 
-.TextCon {
+/* .TextCon {
     display: flex;
     justify-content: right;
     margin: -10px 10px 10px 0;
-}
+} */
 
 .resetBtn {
     height: 2rem;
@@ -216,55 +216,97 @@ p {
     text-align: center;
 }
 
-.resetBtn {
-    margin-right: -8px;
-}
 
 
 @media screen and (max-width:920px) {
     img {
-        height: 13rem;
-        width: 13rem;
+        height: 5rem;
+        width: 6rem;
     }
 
-    .fRowContainer {
-        height: 54rem;
-        width: 18rem;
-        display: grid;
-        grid-template-rows: minmax(18rem, auto);
-        border: 5px solid rgb(29, 0, 50);
-        border-radius: 10px;
-        justify-content: center;
-        align-content: center;
-        margin: 0px auto;
-    }
 
+    .fRowContainer,
     .sRowContainer {
-        height: 36rem;
-        width: 19rem;
-        margin-top: 1rem;
-        font-size: 2rem;
-        display: grid;
-        grid-template-rows: minmax(9rem, auto);
+        height: 10rem;
+        width: 90vw;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: 0px auto;
+        padding: 0 10px;
+    }
+
+    #rock,
+    #paper,
+    #scissors {
+        height: 7.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16rem;
+        /* margin: 0 5rem 0 0; */
+        background: none;
+        cursor: pointer;
+        border: none;
+        transition: 0.4s;
+    }
+
+    #rock:hover,
+    #paper:hover,
+    #scissors:hover {
+        border: 0.2rem solid rgb(0, 0, 0);
+        border-radius: 2.4rem;
+        margin-bottom: 20px;
+        background-color: rgb(209, 209, 209);
+    }
+
+    .SImageS2 {
+        border: 0.3rem solid rgb(0, 0, 0);
+        border-radius: 2.4rem;
+        background-color: rgb(209, 209, 209);
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16rem;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    #count1,
+    #count2 {
+        font-size: 2rem;
+        color: rgb(234, 0, 255);
+    }
+
+    .sColContainer1,
+    .sColContainer2,
+    .sColContainer3 {
+        height: 8rem;
+        width: 4.5rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
         margin: 0px auto;
     }
 
-    .VS{
-        margin-top: 80px;
+    .VS,
+    p {
+        margin: 0;
+        font-size: 1.1rem;
         text-align: center;
     }
-    .resetBtn {
-        margin-right: -8px;
-    }
 
-    .sColContainer3 {
-        height: 18rem;
-        width: 10rem;
-        display: flex;
-        /* justify-content: center;
-        align-items: center; */
-        margin: 0px auto;
-        padding-bottom: 0px;
+    .resetBtn {
+        height: 35px;
+        width: 50px;
+        background-color: white;
+        color: #000000;
+        margin: 0px 6px;
+        font-size: 0.7rem;
+        border: 2px solid black;
+        border-radius: 4px;
+        cursor: pointer;
     }
 }
