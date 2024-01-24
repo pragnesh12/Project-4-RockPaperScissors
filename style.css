@@ -277,7 +277,7 @@ p {
         background: none;
         cursor: pointer;
         border: none;
-        transition: 0.5s;
+        transition: 0.4s;
     }
 
     #rock:hover,
@@ -308,29 +308,15 @@ p {
         color: rgb(234, 0, 255);
     }
 
-    .sColContainer1{
-        height: 6rem;
-        width: 2rem;
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-        margin: 0px 4px;
-    }
-    .sColContainer2{
-        height: 6rem;
-        width: 2rem;
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-        margin: 0px 4px;
-    }
+    .sColContainer1,
+    .sColContainer2,
     .sColContainer3 {
         height: 6rem;
-        width: 2rem;
+        width: 4rem;
         display: flex;
         justify-content: center;
         margin-top: 25px;
-        margin: 0px 4px;
+        margin: 0px auto;
     }
 
     .VS,
