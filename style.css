@@ -252,7 +252,7 @@ p {
         border-radius: 10px;
         margin: 10px auto;
         padding: 0 10px;
-        border: 3px solid black;
+        border: 0.2rem solid rgb(0, 52, 59);
     }
     .sRowContainer {
         height: 10rem;
@@ -277,22 +277,22 @@ p {
         background: none;
         cursor: pointer;
         border: none;
-        transition: 0.4s;
+        transition: 0.5s;
     }
 
     #rock:hover,
     #paper:hover,
     #scissors:hover {
-        border: 0.1rem solid rgb(0, 0, 0);
+        border: 0.2rem solid rgb(0, 0, 0);
         border-radius: 2.4rem;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         background-color: rgb(209, 209, 209);
     }
 
     .SImageS2 {
-        border: 3px solid black;
-        border-radius: 2.4rem;
-        background-color: rgb(209, 209, 209);
+        border: 0.2rem solid black;
+        border-radius: 2rem;
+        background-color: rgb(211, 211, 211);
         height: 8rem;
         display: flex;
         justify-content: center;
@@ -308,15 +308,29 @@ p {
         color: rgb(234, 0, 255);
     }
 
-    .sColContainer1,
-    .sColContainer2,
-    .sColContainer3 {
-        height: 8rem;
-        width: 3rem;
+    .sColContainer1{
+        height: 6rem;
+        width: 2rem;
         display: flex;
         justify-content: center;
         margin-top: 25px;
-        margin: 0px auto;
+        margin: 0px 4px;
+    }
+    .sColContainer2{
+        height: 6rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin: 0px 4px;
+    }
+    .sColContainer3 {
+        height: 6rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin: 0px 4px;
     }
 
     .VS,
